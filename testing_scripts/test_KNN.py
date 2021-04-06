@@ -11,8 +11,7 @@ import KNearest
 
 class TestKNN(unittest.TestCase):
     
-    def __init__(self, *args, **kwargs):
-        super(TestKNN, self).__init__(*args, **kwargs)
+    def setUp(self):
         
         self.dataset1 = pd.DataFrame(
             [['a', 'c', 'f'],

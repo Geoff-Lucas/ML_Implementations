@@ -11,8 +11,7 @@ import NaiveBayes
 
 class TestNaiveBayes(unittest.TestCase):
     
-    def __init__(self, *args, **kwargs):
-        super(TestNaiveBayes, self).__init__(*args, **kwargs)
+    def setUp(self):
         
         self.dataset1 = pd.DataFrame(
             [['a', 'c', 'f'],
